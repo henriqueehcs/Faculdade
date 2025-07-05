@@ -1,4 +1,4 @@
-/* Reset básico */
+/* global*/
 * {
   margin: 0;
   padding: 0;
@@ -6,16 +6,15 @@
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f9f9f9;
-  color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f3f3f0; 
+  color: #2c2c2c; 
   line-height: 1.6;
 }
 
-/* Menu de navegação */
+/* menu de navegação */
 nav {
-  background-color: #222;
-  padding: 10px 0;
+  background-color: #1f2b32; 
 }
 
 nav ul {
@@ -26,39 +25,103 @@ nav ul {
 }
 
 nav li {
-  margin: 0 20px;
+  margin: 20px;
 }
 
 nav a {
-  color: #fff;
+  color: #f3f3f0; 
   text-decoration: none;
   font-weight: bold;
-  transition: color 0.3s ease;
-}
+ }
 
 nav a:hover {
-  color: #4FD1C5;
+  color: #88a697; 
 }
 
-/* Cabeçalho */
+/* cabeçalho */
 header {
   text-align: center;
-  background: linear-gradient(120deg, #4FD1C5, #3182CE);
+  background: linear-gradient(120deg, #88a697, #3b5866);
   color: white;
   padding: 60px 20px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-/* Seção principal */
+/* container  cabeçalho */
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  }
+
+/* caixa do texto */
+.text-box {
+  max-width: 500px;
+  margin-right: -50px;
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-radius: 10px;
+}
+.sobre-texto{
+    text-align: left;
+}
+.texto-h2{
+    text-align: center;
+}
+/* img header */
+.header-container img {
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+/* grid */
+.projetos-container {
+  display: grid; 
+  gap: 20px; 
+  margin-top: 30px; 
+  padding: 0 10px; 
+}
+
+
+.card-projeto {
+  background-color: #ffffff; 
+  color: #2c2c2c; 
+  padding: 20px; 
+  border-radius: 10px; 
+  box-shadow: 0 4px 8px rgba(0,0,0,0.08); 
+}
+
+/* titulo */
+.card-projeto h3 {
+  margin-bottom: 10px; 
+}
+
+/* gitHub*/
+.card-projeto a {
+  display: inline-block; 
+  margin-top: 10px; 
+  color: #3b5866; 
+  text-decoration: none; 
+  font-weight: bold; 
+}
+
+/* efeito */
+.card-projeto a:hover {
+  color: #88a697; 
+}
+/* seção principal */
 section {
   text-align: center;
   padding: 40px 20px;
 }
 
-/* Rodapé */
+/* rodapé */
 footer {
   text-align: center;
-  padding: 20px;
-  background-color: #ddd;
+  padding: 40px 20px;
+  background-color: #cfd4d1; /* cinza claro sutil */
   font-size: 0.9em;
 }
