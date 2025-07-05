@@ -117,6 +117,32 @@ section {
   text-align: center;
   padding: 40px 20px;
 }
+/* parte formulario*/
+.form-contato {
+  max-width: 500px;
+  margin: 0 auto;
+  display: grid;
+  gap: 10px;
+  padding: 20px;
+}
+
+.form-contato input,
+.form-contato textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1em;
+}
+
+.form-contato button {
+  padding: 10px;
+  background-color: #3b5866;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
 
 /* rodapé */
 footer {
